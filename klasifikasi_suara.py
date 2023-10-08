@@ -8,7 +8,7 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 from streamlit_option_menu import option_menu
-from sklearn.metrics.pairwise import euclidean_distances
+from sklearn.metrics._dist_metrics import EuclideanDistance
 
 
 #navigasi sidebar
