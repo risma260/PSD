@@ -1,7 +1,11 @@
-pandas==2.1.1
 streamlit
-scikit-learn==1.2.2
-pip==22.0.3
-numpy==1.25.2
-librosa==0.10.1
+joblib
+seaborn
+matplotlib
+plotly
+streamlit-option-menu
 pickle
+pandas
+scikit-learn==1.2.2
+numpy
+librosa
