@@ -1,11 +1,11 @@
 streamlit
+numpy
+scikit-learn==1.2.2
+pandas
 joblib
 seaborn
 matplotlib
 plotly
+Pillow
 streamlit-option-menu
-pickle
-pandas
-scikit-learn==1.2.2
-numpy
 librosa
