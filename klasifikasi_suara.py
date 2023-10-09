@@ -13,16 +13,14 @@ from sklearn.metrics.pairwise import euclidean_distances
 
 #navigasi sidebar
 # horizontal menu
-selected2 = option_menu(None, ["Data", "Preprocessing data", "Modelling", 'Implementasi'], 
-    icons=['house', 'cloud-upload', "list-task", 'gear'], 
+selected2 = option_menu(None, ["Data"], 
+    icons=['cloud-upload'], 
     menu_icon="cast", default_index=0, orientation="horizontal")
 
 #halaman Data
 if (selected2 == 'Data') :
-    st.title('Menampilkan Data yang Sudah di Normalisasi')
+    st.title('Klasifikasi Audio')
 
-    st.write("Ini adalah data audio yang diambil dari kaggle")
-    st.write("Data ini berisi 10 kolom klasifikasi")
 
     audio = st.file_uploader('Upload Audio',['mp3','wav'])
     if audio:
@@ -66,7 +64,7 @@ if (selected2 == 'Data') :
             knn = pickle.load(model)
         predict = knn.predict(data_norm)
         for i in predict:
-            st.write('Emosinya adalah',i)
+            st.write('Data Audio masuk klasifikasi',i)
 
 
 
