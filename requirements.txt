@@ -9,4 +9,4 @@ plotly
 Pillow
 streamlit-option-menu
 librosa
-pycaret
+pycaret==3.1.0
