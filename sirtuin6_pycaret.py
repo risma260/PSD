@@ -76,7 +76,7 @@ if (selected2 == 'Implementasi'):
         import pickle
         loaded_model = load_model('dt_sirtuin6')
         prediction = predict_model(loaded_model,data=dt)
-        hasil_prediksi = prediction['prediction_label']
+        #hasil_prediksi = prediction['prediction_label']
         st.write("data hasil prediksi")
         st.write(hasil_prediksi)
         for i in hasil_prediksi:
@@ -88,17 +88,7 @@ if (selected2 == 'Implementasi'):
                 st.write('Tidak ada prediksi yang sesuai')
 
 
-        st.write("SC_5:", SC_5)
-        st.write("SP_6:", SP_6)
-        st.write("SHBd:", SHBd)
-        st.write("minHaaCH:", minHaaCH)
-        st.write("maxwHBa:", maxwHBa)
-        st.write("FMF:", FMF)
-
-
-
-
-#halaman modelling
+#halaman profil
 if (selected2 == 'Profil'):
     st.title('Biodata')
 
