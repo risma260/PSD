@@ -76,7 +76,7 @@ if (selected2 == 'Implementasi'):
         import pickle
         loaded_model = load_model('dt_sirtuin6')
         prediction = predict_model(loaded_model,data=dt)
-        #hasil_prediksi = prediction['prediction_label']
+        hasil_prediksi = prediction['prediction_label']
         st.write("data hasil prediksi")
         st.write(hasil_prediksi)
         for i in hasil_prediksi:
