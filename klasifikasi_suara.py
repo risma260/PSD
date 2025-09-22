@@ -13,8 +13,8 @@ from sklearn.metrics.pairwise import euclidean_distances
 
 #navigasi sidebar
 # horizontal menu
-selected2 = option_menu(None, ["Data", "Profil"], 
-    icons=['cloud-upload', 'gear'], 
+selected2 = option_menu(None, ["Data"], 
+    icons=['cloud-upload'], 
     menu_icon="cast", default_index=0, orientation="horizontal")
 
 #halaman Data
@@ -66,11 +66,5 @@ if (selected2 == 'Data') :
         for i in predict:
             st.write('Data Audio masuk klasifikasi',i)
 
-if (selected2 == 'Profil'):
-    st.title('Biodata')
-
-    st.write('Nama : Indah Kharisma')
-    st.write('NIM : 210411100147')
-    st.write('Kelas : PSD A')
 
 
