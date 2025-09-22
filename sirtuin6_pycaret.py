@@ -8,8 +8,8 @@ from PIL import Image
 
 #navigasi sidebar
 # horizontal menu
-selected2 = option_menu(None, ["Data", "Implementasi", "Profil"], 
-    icons=['cloud-upload', "list-task", 'gear'], 
+selected2 = option_menu(None, ["Data", "Implementasi"], 
+    icons=['cloud-upload', "list-task"], 
     menu_icon="cast", default_index=0, orientation="horizontal")
 
 
@@ -88,11 +88,4 @@ if (selected2 == 'Implementasi'):
                 st.write('Tidak ada prediksi yang sesuai')
 
 
-#halaman profil
-if (selected2 == 'Profil'):
-    st.title('Biodata')
-
-    st.write('Nama : Indah Kharisma')
-    st.write('NIM : 210411100147')
-    st.write('Kelas : PSD A')
 
