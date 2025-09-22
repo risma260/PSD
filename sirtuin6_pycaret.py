@@ -31,32 +31,32 @@ if (selected2 == 'Implementasi'):
 
     #membagi kolom
     SC_5 = st.number_input('SC_5', format="%.6f")
-    on = st.toggle('Penjelasan SC_5')
+    on = st.checkbox('Penjelasan SC_5')
     if on:
         st.write('SC_5 merupakan parameter sequential dari molekul sirtuin6')
 
     SP_6 = st.number_input('SP_6', format="%.6f") 
-    on = st.toggle('Penjelasan SP_6')
+    on = st.checkbox('Penjelasan SP_6')
     if on:
         st.write('SP_6 merupakan karakteristik posisi ke-6 dalam molekul sirtuin6')
 
     SHBd = st.number_input('SHBd', format="%.6f")
-    on = st.toggle('Penjelasan SHBd')
+    on = st.checkbox('Penjelasan SHBd')
     if on:
         st.write('SHBd merupakan jumlah atom hidrogen yang terkandung dalam molekul')
 
     minHaaCH = st.number_input('minHaaCH', format="%.6f")
-    on = st.toggle('Penjelasan minHaaCH')
+    on = st.checkbox('Penjelasan minHaaCH')
     if on:
         st.write('minHaaCH merupakan jumlah minimum atom yang terkandung dalam molekul')
 
     maxwHBa = st.number_input('maxwHBa', format="%.6f")
-    on = st.toggle('Penjelasan maxwHBa')
+    on = st.checkbox('Penjelasan maxwHBa')
     if on:
         st.write('maxwHBa merupakan berat maksimum atom yang terkandung dalam molekul')
 
     FMF = st.number_input('FMF', format="%.6f")
-    on = st.toggle('Penjelasan FMF')
+    on = st.checkbox('Penjelasan FMF')
     if on:
         st.write('FMF merupakan ukuran molekul / atom')
 
@@ -95,3 +95,4 @@ if (selected2 == 'Profil'):
     st.write('Nama : Indah Kharisma')
     st.write('NIM : 210411100147')
     st.write('Kelas : PSD A')
+
