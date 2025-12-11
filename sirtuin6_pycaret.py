@@ -18,7 +18,7 @@ selected2 = option_menu(None, ["Data", "Implementasi"],
 #halaman Data
 if (selected2 == 'Data') :
     st.subheader('Deskripsi Data')
-    st.write("Data ini berisi tentang pengklasifikasian molekul bernama sirtuin6 dimana energi yang terkandung didalamnya termasuk rendah atau tinggi")
+    st.write("Halaman ini menampilkan dataset molekul Sirtuin6 beserta fitur-fiturnya. Data digunakan untuk mengklasifikasikan tingkat energi molekul menjadi High BFE atau Low BFE. Pengguna dapat melihat struktur data sebelum diproses oleh model.")
     df = pd.read_csv('SIRTUIN6_excel.csv')
     st.write(df)
 
@@ -26,11 +26,8 @@ if (selected2 == 'Data') :
          
 #halaman Implementasi
 if (selected2 == 'Implementasi'):
-    st.title('Implementasi')
-
-    # judul web
-    st.title('Aplikasi Prediksi Sirtuin6')
-
+    st.subheader('Implementasi')
+    st.write("Halaman ini menyediakan form input untuk memasukkan nilai fitur molekul dan menjalankan prediksi secara real-time. Pengguna juga dapat melihat penjelasan tiap fitur untuk memahami konteks prediksi.")
     #membagi kolom
     SC_5 = st.number_input('SC_5', format="%.6f")
     on = st.checkbox('Penjelasan SC_5')
@@ -88,6 +85,7 @@ if (selected2 == 'Implementasi'):
                 st.write('High_BFE')
             else:   
                 st.write('Tidak ada prediksi yang sesuai')
+
 
 
 
