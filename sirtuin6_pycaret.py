@@ -17,7 +17,7 @@ selected2 = option_menu(None, ["Data", "Implementasi"],
 
 #halaman Data
 if (selected2 == 'Data') :
-    st.title('Deskripsi Data')
+    st.subheader('Deskripsi Data')
     st.write("Data ini berisi tentang pengklasifikasian molekul bernama sirtuin6 dimana energi yang terkandung didalamnya termasuk rendah atau tinggi")
     df = pd.read_csv('SIRTUIN6_excel.csv')
     st.write(df)
@@ -88,6 +88,7 @@ if (selected2 == 'Implementasi'):
                 st.write('High_BFE')
             else:   
                 st.write('Tidak ada prediksi yang sesuai')
+
 
 
 
