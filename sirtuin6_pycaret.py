@@ -17,7 +17,7 @@ selected2 = option_menu(None, ["Data", "Implementasi"],
 
 #halaman Data
 if (selected2 == 'Data') :
-    st.subheader('Deskripsi Data')
+    st.subheader('Struktur Data')
     st.write("Halaman ini menampilkan dataset molekul Sirtuin6 beserta fitur-fiturnya. Data digunakan untuk mengklasifikasikan tingkat energi molekul menjadi High BFE atau Low BFE. Pengguna dapat melihat struktur data sebelum diproses oleh model.")
     df = pd.read_csv('SIRTUIN6_excel.csv')
     st.write(df)
@@ -85,6 +85,7 @@ if (selected2 == 'Implementasi'):
                 st.write('High_BFE')
             else:   
                 st.write('Tidak ada prediksi yang sesuai')
+
 
 
 
