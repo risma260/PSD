@@ -8,6 +8,8 @@ from PIL import Image
 
 #navigasi sidebar
 # horizontal menu
+# judul web
+    st.title('Aplikasi Prediksi Sirtuin6')
 selected2 = option_menu(None, ["Data", "Implementasi"], 
     icons=['cloud-upload', "list-task"], 
     menu_icon="cast", default_index=0, orientation="horizontal")
@@ -86,6 +88,7 @@ if (selected2 == 'Implementasi'):
                 st.write('High_BFE')
             else:   
                 st.write('Tidak ada prediksi yang sesuai')
+
 
 
 
